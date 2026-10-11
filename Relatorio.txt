@@ -1,0 +1,5 @@
+Prevenção de SQL Injection: A utilização de Prepared Statements mitiga o risco de execução remota de código SQL malicioso por parte de invasores. Isso impede que inputs manipulados burlem filtros de autenticação, corrompam a base de dados ou exfiltrem todo o inventário de ativos corporativos de forma indevida.
+
+Hash de senha de acesso ao ativo: Armazenar hashes (via bcrypt) em vez de senhas em texto puro mitiga o risco de exposição massiva de credenciais caso o banco de dados sofra um vazamento (data breach). O uso do salt assegura que senhas idênticas gerem hashes diferentes, protegendo as credenciais administrativas contra ataques de força bruta e rainbow tables.
+
+Validação de esquema no MongoDB: A aplicação do $jsonSchema mitiga o risco de corrupção da integridade de dados inerente a bancos schemaless. Ao obrigar o uso de enums e tipos específicos (como double no CVSS), evita-se a injeção de estruturas não previstas que poderiam quebrar a lógica da aplicação, gerar falsos negativos em relatórios de segurança ou abrir margem para ataques de NoSQL Injection.

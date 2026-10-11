@@ -1,0 +1,178 @@
+[
+  {
+    "cve_id": "CVE-2024-3094",
+    "ativo_relacionado": "srv-web-01",
+    "categoria": "sistema_operacional",
+    "severidade": "critica",
+    "score_cvss": 9.8,
+    "descricao": "Backdoor em biblioteca de compressao (liblzma) via pacote comprometido",
+    "status": "aberta",
+    "data_deteccao": "2026-09-01",
+    "detalhes": {
+      "pacote_afetado": "xz-utils",
+      "versao_instalada": "5.6.0",
+      "versao_corrigida": "5.6.2"
+    }
+  },
+  {
+    "cve_id": "CVE-2023-44487",
+    "ativo_relacionado": "srv-web-01",
+    "categoria": "rede",
+    "severidade": "alta",
+    "score_cvss": 7.5,
+    "descricao": "HTTP/2 Rapid Reset - permite negacao de servico via multiplexacao de streams",
+    "status": "em_correcao",
+    "data_deteccao": "2026-08-28",
+    "detalhes": {
+      "porta_afetada": 443,
+      "protocolo": "HTTP/2",
+      "mitigacao_aplicada": "rate_limiting"
+    }
+  },
+  {
+    "cve_id": null,
+    "ativo_relacionado": "portal-clientes",
+    "categoria": "aplicacao_web",
+    "severidade": "alta",
+    "score_cvss": 8.2,
+    "descricao": "Injecao SQL no parametro de busca do endpoint de pedidos",
+    "status": "corrigida",
+    "data_deteccao": "2026-08-20",
+    "detalhes": {
+      "endpoint_afetado": "/api/pedidos?busca=",
+      "payload_detectado": "' OR '1'='1",
+      "framework": "Flask"
+    }
+  },
+  {
+    "cve_id": "CVE-2025-1097",
+    "ativo_relacionado": "notebook-financeiro-07",
+    "categoria": "sistema_operacional",
+    "severidade": "media",
+    "score_cvss": 5.4,
+    "descricao": "Escalonamento de privilegios local no driver de impressao",
+    "status": "aberta",
+    "data_deteccao": "2026-09-05",
+    "detalhes": {
+      "componente": "spooler de impressao",
+      "versao_corrigida": "KB5034129"
+    }
+  },
+  {
+    "cve_id": null,
+    "ativo_relacionado": "switch-core-02",
+    "categoria": "rede",
+    "severidade": "critica",
+    "score_cvss": 9.1,
+    "descricao": "Credenciais padrao de fabrica ainda ativas na interface de gerenciamento",
+    "status": "aberta",
+    "data_deteccao": "2026-09-03",
+    "detalhes": {
+      "porta_afetada": 23,
+      "protocolo": "Telnet",
+      "credencial_padrao_encontrada": true
+    }
+  },
+  {
+    "cve_id": "CVE-2024-6387",
+    "ativo_relacionado": "srv-banco-dados-01",
+    "categoria": "sistema_operacional",
+    "severidade": "critica",
+    "score_cvss": 8.1,
+    "descricao": "RegreSSHion - condicao de corrida no OpenSSH permite execucao remota de codigo",
+    "status": "em_correcao",
+    "data_deteccao": "2026-08-15",
+    "detalhes": {
+      "servico_afetado": "sshd",
+      "versao_instalada": "9.3p1",
+      "versao_corrigida": "9.8p1"
+    }
+  },
+  {
+    "cve_id": null,
+    "ativo_relacionado": "estacao_rh_04",
+    "categoria": "endpoint",
+    "severidade": "baixa",
+    "score_cvss": 3.1,
+    "descricao": "Extensao de navegador nao homologada com permissoes excessivas instalada",
+    "status": "corrigida",
+    "data_deteccao": "2026-08-10",
+    "detalhes": {
+      "navegador": "Chrome",
+      "extensao": "pdf-converter-turbo"
+    }
+  },
+  {
+    "cve_id": "CVE-2025-0282",
+    "ativo_relacionado": "vpn-gateway-01",
+    "categoria": "rede",
+    "severidade": "critica",
+    "score_cvss": 9.0,
+    "descricao": "Estouro de buffer no gateway VPN permite execucao remota de codigo sem autenticacao",
+    "status": "aberta",
+    "data_deteccao": "2026-09-08",
+    "detalhes": {
+      "porta_afetada": 443,
+      "protocolo": "SSL VPN",
+      "explorada_ativamente": true
+    }
+  },
+  {
+    "cve_id": null,
+    "ativo_relacionado": "srv-web-01",
+    "categoria": "aplicacao_web",
+    "severidade": "media",
+    "score_cvss": 6.5,
+    "descricao": "Cabecalhos de seguranca ausentes (CSP, X-Frame-Options) expõem a clickjacking",
+    "status": "aberta",
+    "data_deteccao": "2026-09-02",
+    "detalhes": {
+      "endpoint_afetado": "/painel/admin",
+      "cabecalhos_ausentes": ["Content-Security-Policy", "X-Frame-Options"]
+    }
+  },
+  {
+    "cve_id": "CVE-2023-38408",
+    "ativo_relacionado": "srv-arquivos-02",
+    "categoria": "sistema_operacional",
+    "severidade": "alta",
+    "score_cvss": 8.6,
+    "descricao": "Vulnerabilidade no agente de encaminhamento do OpenSSH (ssh-agent)",
+    "status": "corrigida",
+    "data_deteccao": "2026-07-30",
+    "detalhes": {
+      "servico_afetado": "ssh-agent",
+      "versao_instalada": "8.9",
+      "versao_corrigida": "9.3"
+    }
+  },
+  {
+    "cve_id": null,
+    "ativo_relacionado": "notebook-diretoria-01",
+    "categoria": "endpoint",
+    "severidade": "media",
+    "score_cvss": 5.9,
+    "descricao": "Antivirus desatualizado ha mais de 60 dias sem atualizacao de assinatura",
+    "status": "em_correcao",
+    "data_deteccao": "2026-09-06",
+    "detalhes": {
+      "produto": "Endpoint Protection Corp",
+      "dias_sem_atualizacao": 63
+    }
+  },
+  {
+    "cve_id": "CVE-2024-21762",
+    "ativo_relacionado": "firewall-perimetro-01",
+    "categoria": "rede",
+    "severidade": "critica",
+    "score_cvss": 9.6,
+    "descricao": "Escrita fora dos limites no SSL VPN do firewall permite execucao remota de codigo",
+    "status": "aberta",
+    "data_deteccao": "2026-09-09",
+    "detalhes": {
+      "porta_afetada": 443,
+      "protocolo": "SSL VPN",
+      "explorada_ativamente": true
+    }
+  }
+]
